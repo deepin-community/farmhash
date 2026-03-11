@@ -1,5 +1,76 @@
-template-repository (1.0-1) unstable; urgency=medium
+farmhash (0~git20190513.0d859a8-4) unstable; urgency=medium
 
-  * Initial release
+  * Add debian/salsa-ci.yml
+  * Set myself as Uploaders (Closes: #1013209)
+  * Make the lintian-overrides multiarch compatible
+  * Bumped Standards-Version to 4.7.2
+  * Remove trailing whitespace in debian/copyright (routine-update)
+  * Add more fields in upstream/metadata
+  * Add Forwarded link to gcc-11.patch
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Dylan Aïssi <daissi@debian.org>  Wed, 03 Sep 2025 19:03:46 +0200
+
+farmhash (0~git20190513.0d859a8-3) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control:
+    - Added Rules-Requires-Root field to source stanza.
+    - Bumped Standards-Version to 4.7.0.
+
+ -- Matheus Polkorny <mpolkorny@gmail.com>  Fri, 17 May 2024 23:44:27 -0300
+
+farmhash (0~git20190513.0d859a8-2) unstable; urgency=medium
+
+  * Cherry-pick pull-request to fix GCC-11 FTBFS (Closes: #984118)
+  * Add *.la files in debian/not-installed.
+  * Bump debhelper compat level to 13.
+  * Update my own email address.
+
+ -- Mo Zhou <lumin@debian.org>  Thu, 11 Nov 2021 11:04:43 -0500
+
+farmhash (0~git20190513.0d859a8-1) unstable; urgency=medium
+
+  * New upstream version 0~git20190513.0d859a8
+  * Bump debhelper compat level to 12, and deprecate d/compat.
+  * Bump Standards-Version to 4.4.0 (no change).
+
+ -- Mo Zhou <cdluminate@gmail.com>  Sat, 14 Sep 2019 00:33:26 +0000
+
+farmhash (0~git20171030.2f0e005-1) unstable; urgency=medium
+
+  * New upstream version 0~git20171030.2f0e005
+  * Add watch file to monitor upstream master branch.
+    - Remove lintian override of debian-watch-file-is-missing
+  * Change Maintainer to science team
+  * Add vcs-* fields in control.
+  * Copyright: update my name, and use https link
+  * Bump Standards-Version to 4.1.4 (no change)
+
+ -- Mo Zhou <cdluminate@gmail.com>  Fri, 20 Apr 2018 02:07:32 +0000
+
+farmhash (0~20170626-g23eecfb-1) unstable; urgency=medium
+
+  * Import snapshot.
+  * Remove merged patch detect-big-endian.patch
+  * Bump Standards-Version to 4.0.0 (requires no change).
+  * Remove the unused ${shlibs:Depends} for the dev package.
+
+ -- Zhou Mo <cdluminate@gmail.com>  Sat, 29 Jul 2017 02:21:38 +0000
+
+farmhash (0~20170330-gb610425-1) experimental; urgency=medium
+
+  * Import upstream snapshot.
+
+ -- Zhou Mo <cdluminate@gmail.com>  Fri, 14 Apr 2017 04:00:28 +0000
+
+farmhash (0~20161014-g92e897b-2) experimental; urgency=medium
+
+  * Add patch: detect-big-endian.patch to fix FTBFS on big-endian archs.
+
+ -- Zhou Mo <cdluminate@gmail.com>  Mon, 23 Jan 2017 02:56:32 +0000
+
+farmhash (0~20161014-g92e897b-1) experimental; urgency=medium
+
+  * Initial release. (Closes: #848883)
+
+ -- Zhou Mo <cdluminate@gmail.com>  Mon, 26 Dec 2016 15:13:40 +0000

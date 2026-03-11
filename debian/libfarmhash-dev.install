@@ -1,0 +1,4 @@
+usr/include/farmhash.h
+
+usr/lib/*/libfarmhash.a
+usr/lib/*/libfarmhash.so

@@ -1,0 +1,2 @@
+# we follow the upstream to keep the duplicated files
+libfarmhash-dev: duplicate-files usr/share/doc/libfarmhash-dev/examples/WRAPPERuint32tconstcharssizetlenuint32tseed usr/share/doc/libfarmhash-dev/examples/WRAPPERuint32tconstcharssizetlenuint64tseed

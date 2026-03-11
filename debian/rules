@@ -1,4 +1,9 @@
 #!/usr/bin/make -f
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CXXFLAGS_MAINT_APPEND = -Wall
 
 %:
 	dh $@
+
+override_dh_installexamples:
+	dh_installexamples -XNEWS -XREADME -XCOPYING -XUnderstanding_Hash_Functions

@@ -1,0 +1,2 @@
+# don't want to keep symbols file for C++ shared library
+libfarmhash0: no-symbols-control-file usr/lib/*/libfarmhash.so.*
